@@ -5,7 +5,7 @@ import { PrismaClient } from '@prisma/client'
 const app = fastify();
 const prisma = new PrismaClient()
 
-app.register(cors)
+app.register(cors) // Aqui pode definir as url que podem acessar essa api
 // Método HTTP: Get, Post, Put, Patch, Delete
 
 app.get('/hello', async () => {
